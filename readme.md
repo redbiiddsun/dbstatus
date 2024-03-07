@@ -1,30 +1,28 @@
 ---
-# project_name
+# DBStatus
 
+The project aims to create a command-line tool in Python that facilitates the testing of database connections. This tool will enable users to quickly and efficiently verify the connectivity and functionality of various types of databases, including MySQL, PostgreSQL, MongoDB, and more in the futrue.
 
-project_description
-
-## Install it from PyPI
+## Install required dependencies
 
 ```bash
-pip install project_name
+pip install -r requirements. txt
 ```
 
 ## Usage
-
-```py
-from project_name import BaseClass
-from project_name import base_function
-
-BaseClass().base_method()
-base_function()
-```
-
+MySQL
 ```bash
-$ python -m project_name
-#or
-$ project_name
+python dbstatus.py -mysql mysql://root:root@localhost:3306/database
 ```
+MongoDB
+```bash
+python dbstatus.py -mongo mongodb://localhost:27017/
+```
+PostgreSQL
+```bash
+python dbstatus.py -postgre postgres://admin:password@localhost:5432/database
+```
+
 
 ## Development
 
